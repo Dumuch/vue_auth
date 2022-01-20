@@ -1,12 +1,30 @@
 <template>
-  <div>
-    <h3>Войти</h3>
-    <input type="text" v-model="email" placeholder="Email" /><br />
-    <input type="password" v-model="password" placeholder="password" /><br />
-    <button @click="logIn">Войти</button>
-    <p>
-      <router-link to="/register">зарегистироваться</router-link>
-    </p>
+  <div class="row d-flex justify-content-center">
+    <div class="col-6">
+      <h3 class="fs-3 mb-4">Войти</h3>
+      <div class="input-group mb-3">
+        <input
+          class="form-control"
+          type="text"
+          v-model="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          class="form-control"
+          type="password"
+          v-model="password"
+          placeholder="password"
+        />
+      </div>
+      <button class="btn btn-success" @click="logIn">Войти</button>
+      <p>
+        <router-link class="btn btn-link" to="/register"
+          >зарегистироваться</router-link
+        >
+      </p>
+    </div>
   </div>
 </template>
 

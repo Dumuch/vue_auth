@@ -1,10 +1,28 @@
 <template>
-  <div>
-    <p>Регистрация нового пользователя</p>
-    <input type="text" v-model="email" placeholder="Email" /><br />
-    <input type="password" v-model="password" placeholder="Password" /><br />
-    <button @click="register">Зарегистироваться</button>
-    <span>или <router-link to="/login">войти</router-link>.</span>
+  <div class="row d-flex justify-content-center">
+    <div class="col-6">
+      <p class="fs-3 mb-4">Регистрация нового пользователя</p>
+      <div class="input-group mb-3">
+        <input
+          class="form-control"
+          type="text"
+          v-model="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          class="form-control"
+          type="password"
+          v-model="password"
+          placeholder="password"
+        />
+      </div>
+      <button class="btn btn-success" @click="register">
+        Зарегистироваться
+      </button>
+      <p><router-link class="btn btn-link" to="/login">войти</router-link></p>
+    </div>
   </div>
 </template>
 

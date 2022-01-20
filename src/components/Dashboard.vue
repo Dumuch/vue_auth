@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <h1>Панель управления</h1>
-    <button @click="logout">Выйти</button>
+  <div class="row d-flex jasity-content-center">
+    <div class="col-6">
+      <p class="fs-3 mb-4">Панель управления</p>
+      <button class="btn btn-danger" @click="logout">Выйти</button>
+    </div>
   </div>
 </template>
 

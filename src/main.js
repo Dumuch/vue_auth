@@ -1,5 +1,6 @@
 import Vue from "vue";
 import firebase from "firebase";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App.vue";
 import router from "./router";
