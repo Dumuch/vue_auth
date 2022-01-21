@@ -1,9 +1,11 @@
 <template>
   <div class="row d-flex jasity-content-center">
     <div class="col-6">
-      <p class="fs-3 mb-4">Панель управления</p>
+      <p class="fs-3 mb-4">О компании</p>
       <button class="btn btn-danger" @click="logout">Выйти</button>
-      <router-link class="btn btn-link" to="/about">О компании</router-link>
+      <router-link class="btn btn-link" to="/dashboard"
+        >Панель управления</router-link
+      >
     </div>
   </div>
 </template>
@@ -12,7 +14,7 @@
 import firebase from "firebase";
 
 export default {
-  name: "Dashboard",
+  name: "About",
   data() {
     return {};
   },
